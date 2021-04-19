@@ -19,11 +19,11 @@
 		"btc",
 		"blockchain"
 	],
-	"author": "Dan Janosik <dan@47.io>",
+	"author": "Investornati.com",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/janoside/btc-rpc-explorer.git"
+		"url": "https://github.com/NAT-THE-GREAT/NATION-EXPLORER.git"
 	},
 	"dependencies": {
 		"async": "^3.2.0",
