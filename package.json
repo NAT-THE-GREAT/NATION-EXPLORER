@@ -1,6 +1,6 @@
 {
 	"name": "nationcoin-explorer",
-	"version": "1.0",
+	"version": "1.0.0",
 	"description": "Open-source, self-hosted Bitcoin explorer",
 	"private": "true",
 	"bin": "bin/cli.js",
