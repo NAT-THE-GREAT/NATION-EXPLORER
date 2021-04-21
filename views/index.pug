@@ -25,14 +25,14 @@ block content
 				.float-start
 					if (config.demoSite)
 						- var networkNameMap = {"main": "Mainnet", "test": "Testnet", "signet": "Signet"};
-						span.badge.bg-primary.mb-1.ms-0.ms-md-3.mt-1(title=`This is a public demo, but this tool is designed to be installed and run by all Bitcoiners...<br/><i>Don't Trust, Verify</i>!`, data-bs-toggle="tooltip", data-bs-html="true")
-							span.me-2 #{networkNameMap[global.activeBlockchain]} Demo
+						span.badge.bg-primary.mb-1.ms-0.ms-md-3.mt-1(title= 'Public web based blockchain simple explorer' , data-bs-toggle="tooltip", data-bs-html="true")
+							span.me-2 #{networkNameMap[global.activeBlockchain]} NationCoin - Chain Explorer
 							i.fas.fa-sticky-note
 			
 
 			.mb-2 NATIONCOIN - WEB BITCOIN-BLOCKCHAIN EXPLORER DEV BY <u>NAT-D-GREAT!</u/>
 			.mb-3
-				- var features = ["Open-Source", "Easy Setup", "Low Hardware Requirements", "Fun!"];
+				- var features = ["Bitcoin Tools!" "Secured!" "LightSpeed Network"];
 
 				each feature in features
 					span.badge.bg-light.text-dark.border.me-2
@@ -75,7 +75,7 @@ block content
 			+contentSection("Latest Blocks")
 				- var blocks = latestBlocks;
 				- var blockOffset = 0;
-				- var hideBlockIndex = true;
+				- var hideBlockIndex = false;
 
 				include includes/blocks-list.pug
 
