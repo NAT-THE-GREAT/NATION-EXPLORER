@@ -57,7 +57,7 @@ for (let i = 0; i < electrumServerUriStrings.length; i++) {
 
 ].forEach(function(item) {
 	if (process.env[item] === undefined) {
-		process.env[item] = "false";
+		process.env[item] = "true";
 
 		debugLog(`Config(default): ${item}=false`)
 	}
@@ -183,7 +183,7 @@ module.exports = {
 
 	site: {
 		homepage:{
-			recentBlocksCount: (process.env.BTCEXP_UI_HOME_PAGE_LATEST_BLOCKS_COUNT || (slowDeviceMode ? 5 : 10))
+			recentBlocksCount: (process.env.BTCEXP_UI_HOME_PAGE_LATEST_BLOCKS_COUNT || (slowDeviceMode ? 15 : 10))
 		},
 		blockTxPageSize: (slowDeviceMode ? 10 : 20),
 		addressTxPageSize: 10,
